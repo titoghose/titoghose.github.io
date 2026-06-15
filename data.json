@@ -1,7 +1,7 @@
 {
     "name": "Upamanyu Ghose",
     "title": "PhD Student, University of Oxford",
-    "about": "I am a researcher in the Computational and Molecular Neuroscience Group (CMNG) at the University of Oxford, specialising in machine learning applied to genomics. I completed my MSc in Computer Science at Oxford in 2020, and have been at the CMNG ever since. While machine learning is the area I specialise in, I enjoy applying it to genomics and neuroscience are the areas that deeply fascinate me. I believe that leveraging the power of AI can facilitate novel and interesting findings in the field of genomics and neuroscience. My current work revolves around using neural networks (NNs) to better understand the genetic factors contributing to neurodegenerative diseases like Alzheimer's disease. Beyond my primary interest in machine learning in the field of biology, I am also very interested in the applications of NLP for healthcare, and machine learning in the field of renewable energy and sustainability.",
+    "about": "I am a doctoral researcher in the Computational and Molecular Neuroscience Group at the University of Oxford, where my work applies machine learning to large-scale genomic data. I completed my MSc in Computer Science at Oxford in 2020 and have worked on the genomics of neurodegenerative disease ever since, first as a research assistant and now through my PhD. Machine learning is my core specialism, and genomics and neuroscience are the areas I most enjoy applying it to. My current research uses neural networks to better understand the genetic factors behind diseases like Alzheimer's, with a focus on findings that are interpretable and useful rather than predictive alone. Beyond my own research, I am increasingly interested in how the same methods can be put to work for actionable change in other domains. I am drawn to problems where machine learning can be applied to large, real-world datasets to support better decisions, whether in healthcare, biology or public services.",
     "picture": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/profile_pic.webp",
     "github": "https://github.com/titoghose",
     "linkedin": "https://www.linkedin.com/in/upamanyu-ghose-7b1681130/",
@@ -11,9 +11,9 @@
     "projects": [
         {
             "id": 1,
-            "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/GWANN.webp",
+            "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/proteomic_aging_clock.webp",
             "title": "Proteomic Aging Clock",
-            "description": "",
+            "description": "Contributed to the development and evaluation of neural network models for a proteomic ageing clock, comparing their performance against linear models and LightGBM approaches. The project used large-scale plasma proteomics data to predict biological ageing and assess its association with chronic disease risk, multimorbidity, functional decline and mortality across diverse population cohorts.",
             "link": "https://www.nature.com/articles/s41591-024-03164-7",
             "code": "https://github.com/miargentieri/proteomic-age-ukb/tree/main/code/neural-networks"
         },
