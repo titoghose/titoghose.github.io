@@ -1,7 +1,7 @@
 {
     "name": "Upamanyu Ghose",
     "title": "PhD Student, University of Oxford",
-    "about": "I am a researcher in the Translational Neuroscience and Dementia Research Group (TNDRG) at the University of Oxford, specialising in AI applied to genomics. I completed my MSc in Computer Science at Oxford in 2020, and have been at the TNDRG ever since. While AI is the area I specialise in, genomics and neuroscience are the areas that deeply fascinate me. I believe that leveraging the power of AI can facilitate novel and interesting findings in the field of genomics and neuroscience. My current work revolves around using neural networks (NNs) to better understand the genetic factors contributing to neurodegenerative diseases like Alzheimer's disease. Beyond my primary interest in machine learning in the field of biology, I am also very interested in the applications of NLP for healthcare, and machine learning in the field of renewable energy and sustainability.",
+    "about": "I am a researcher in the Computational and Molecular Neuroscience Group (CMNG) at the University of Oxford, specialising in machine learning applied to genomics. I completed my MSc in Computer Science at Oxford in 2020, and have been at the CMNG ever since. While machine learning is the area I specialise in, I enjoy applying it to genomics and neuroscience are the areas that deeply fascinate me. I believe that leveraging the power of AI can facilitate novel and interesting findings in the field of genomics and neuroscience. My current work revolves around using neural networks (NNs) to better understand the genetic factors contributing to neurodegenerative diseases like Alzheimer's disease. Beyond my primary interest in machine learning in the field of biology, I am also very interested in the applications of NLP for healthcare, and machine learning in the field of renewable energy and sustainability.",
     "picture": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/profile_pic.webp",
     "github": "https://github.com/titoghose",
     "linkedin": "https://www.linkedin.com/in/upamanyu-ghose-7b1681130/",
@@ -12,13 +12,21 @@
         {
             "id": 1,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/GWANN.webp",
-            "title": "Genome Wide Association Neural Networks (GWANN)",
-            "description": "Augmenting traditional genome wide association studies (GWAS) with advanced machine learning algorithms can allow the detection of novel signals in available cohorts by providing complementary approaches to the existing methods. We introduce “Genome wide association neural networks (GWANN)”, a novel approach that uses neural networks (NNs) to account for nonlinear and SNP-SNP interaction effects. We applied GWANN to family history of Alzheimer's disease (AD) in the UK Biobank. Our method identified 26 known AD genes, 2 target nominations and 67 novel genes, and validated the results against brain eQTLs, AD phenotype associations, biological pathways, disease associations and differentially expressed gene sets in the AD brain. Some drugs targeting novel GWANN hits are currently in clinical trials for AD. Applying NNs for GWAS, alongside existing methods, illustrates their potential to complement existing algorithms and methods, and enable the discovery of novel and tractable targets for AD.",
-            "link": "https://www.medrxiv.org/content/10.1101/2022.06.10.22276251v2.full",
-            "code": "https://github.com/titoghose/GWANN"
+            "title": "Proteomic Aging Clock",
+            "description": "",
+            "link": "https://www.nature.com/articles/s41591-024-03164-7",
+            "code": "https://github.com/miargentieri/proteomic-age-ukb/tree/main/code/neural-networks"
         },
         {
             "id": 2,
+            "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/GWANN.webp",
+            "title": "Genome Wide Association Neural Networks (GWANN)",
+            "description": "Augmenting traditional genome wide association studies (GWAS) with advanced machine learning algorithms can allow the detection of novel signals in available cohorts by providing complementary approaches to the existing methods. We introduce “Genome wide association neural networks (GWANN)”, a novel approach that uses neural networks (NNs) to account for nonlinear and SNP-SNP interaction effects. We applied GWANN to family history of Alzheimer's disease (AD) in the UK Biobank. Our method identified 26 known AD genes, 2 target nominations and 67 novel genes, and validated the results against brain eQTLs, AD phenotype associations, biological pathways, disease associations and differentially expressed gene sets in the AD brain. Some drugs targeting novel GWANN hits are currently in clinical trials for AD. Applying NNs for GWAS, alongside existing methods, illustrates their potential to complement existing algorithms and methods, and enable the discovery of novel and tractable targets for AD.",
+            "link": "https://doi.org/10.1093/bib/bbae704",
+            "code": "https://github.com/titoghose/GWANN"
+        },
+        {
+            "id": 3,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/PyTrack.webp",
             "title": "PyTrack",
             "description": "Eye tracking is a widely used tool for behavioral research in the field of psychology. With technological advancement, we now have specialized eye-tracking devices that offer high sampling rates, up to 2000 Hz, and allow for measuring eye movements with high accuracy. They also offer high spatial resolution, which enables the recording of very small movements, like drifts and microsaccades. Features and parameters of interest that characterize eye movements need to be algorithmically extracted from raw data as most eye trackers identify only basic parameters, such as blinks, fixations, and saccades. Eye-tracking experiments may investigate eye movement behavior in different groups of participants and in varying stimuli conditions. Hence, the analysis stage of such experiments typically involves two phases, (i) extraction of parameters of interest and (ii) statistical analysis between different participants or stimuli conditions using these parameters. Furthermore, the datasets collected in these experiments are usually very large in size, owing to the high temporal resolution of the eye trackers, and hence would benefit from an automated analysis toolkit. In this work, we present PyTrack, an end-to-end open-source solution for the analysis and visualization of eye-tracking data. It can be used to extract parameters of interest, generate and visualize a variety of gaze plots from raw eye-tracking data, and conduct statistical analysis between stimuli conditions and subject groups.",
@@ -26,7 +34,7 @@
             "code": "https://github.com/titoghose/pytrack"
         },
         {
-            "id": 3,
+            "id": 4,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/Q_Pi.webp",
             "title": "Q-Pi",
             "description": "Q-Pi is a simple tool using Python 3 that allows the 3D reconstruction, visualization and quantification of invasion at a cellular level. The first step of Q-Pi is the application of a series of filters to segment the cell regions from the background. Following the segmentation, it identifies the contours of the cell, i.e., a set of points in two-dimensional Euclidean space on the boundary of the cell. Finally, the convex hull algorithm is used to reconstruct the cell in 3D Euclidean space. Using the generated convex hull, information of the cell's volume and percentage invasion can be obtained using its relative location to the membrane.",
@@ -34,14 +42,14 @@
             "code": "https://github.com/titoghose/Q-Pi"
         },
         {
-            "id": 4,
+            "id": 5,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/TedX.webp",
             "title": "Artificial Intelligence: Investing in Yourself",
             "description": "In today's world, people make use of various forms of AI ranging from google searches to driverless cars. It is often misunderstood that AI is an extremely complex concept to understand. Hence, people try to distance themselves. This talk at TedXHRCollege in 2017 explores this complexity, discussing the foundation of AI algorithms and drawing similarities to the human brain's learning process. It includes a comparison of the brain's visual cortex with the architecture of convolutional neural networks (CNNs) using a toy example of object recognition. The human brain is arguably the most elegantly designed machine but unfortunately remains majorly unexplored. AI can be the tool which would aid exploring and decoding the mysteries of this complex system. The aim of this brief talk was to familiarise people with ways in which AI can help understand the brain and improve the quality and level of natural intelligence. Investing in AI is ultimately investing in yourself.",
             "link": "https://www.ted.com/talks/upamanyu_ghose_artificial_intelligence_investing_in_yourself"
         },
         {
-            "id": 5,
+            "id": 6,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/Solis.webp",
             "title": "Solis",
             "description": "Solis is a smart light box integrated with its own mobile app that allows tracking of light therapy sessions and suggests activities to improve mood and mental health. A companion that helps you take control of your mood and mental health. The innovation in mental healthcare that gives light therapy its Peloton moment. Solis was ideated along with Dr. Minah Faiz, a brilliant doctor from Maldives who now runs the Mission for Migrant Workers Maldives. It was also awarded the best social enterprise at the Weidenfeld-Hoffmann Trust Enterprise Challenge in 2020.",
@@ -50,7 +58,7 @@
     ],
     "life": {
         "description": "Beyond my research interests, I enjoy ",
-        "link": "cooking, swimming, trekking, cycling, and playing the guitar.",
+        "link": "rowing, cooking, swimming, trekking, cycling, and playing the guitar.",
         "images": [
             {
                 "id": 1,
@@ -104,6 +112,12 @@
                 "id": 9,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/camp_nou.webp",
                 "caption": "At Camp Nou",
+                "alt": ""
+            },
+            {
+                "id": 10,
+                "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/oxford_rowing.webp",
+                "caption": "Winning blades at Summer VIIIs 2024 with GTBC",
                 "alt": ""
             }
         ]
