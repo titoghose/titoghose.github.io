@@ -31,9 +31,11 @@ export const Research: FC = () => {
                         </Text>
                     </Box>
                     <Flex gap="4">
-                        <Button variant="link" mt="4" justifyContent="flex-start" onClick={() => window.open(link)}>
-                            Read More
-                        </Button>
+                        {link && (
+                            <Button variant="link" mt="4" justifyContent="flex-start" onClick={() => window.open(link)}>
+                                Read More
+                            </Button>
+                        )}
                         {code && (
                             <Button variant="link" mt="4" justifyContent="flex-start" onClick={() => window.open(code)}>
                                 Code

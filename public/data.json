@@ -1,6 +1,6 @@
 {
     "name": "Upamanyu Ghose",
-    "title": "PhD Student, University of Oxford",
+    "title": "DPhil Student, University of Oxford",
     "about": "I am a doctoral researcher in the Computational and Molecular Neuroscience Group at the University of Oxford, where my work applies machine learning to large-scale genomic data. I completed my MSc in Computer Science at Oxford in 2020 and have worked on the genomics of neurodegenerative disease ever since, first as a research assistant and now through my PhD. Machine learning is my core specialism, and genomics and neuroscience are the areas I most enjoy applying it to. My current research uses neural networks to better understand the genetic factors behind diseases like Alzheimer's, with a focus on findings that are interpretable and useful rather than predictive alone. Beyond my own research, I am increasingly interested in how the same methods can be put to work for actionable change in other domains. I am drawn to problems where machine learning can be applied to large, real-world datasets to support better decisions, whether in healthcare, biology or public services.",
     "picture": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/profile_pic.webp",
     "github": "https://github.com/titoghose",
@@ -11,6 +11,12 @@
     "projects": [
         {
             "id": 1,
+            "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/phd.webp",
+            "title": "Machine learning prediction of gene expression to identify genes and mechanisms in Alzheimer's disease (ongoing PhD)",
+            "description": "My ongoing PhD work develops neural network models that predict brain gene expression from DNA and generalise across independent datasets. The aim is to identify genes and mechanisms linked to Alzheimer's disease using models that are reproducible and interpretable rather than predictive alone. This work is in progress and further details on the method and code are held in a private repository pending publication and thesis submission."
+        },
+        {
+            "id": 2,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/proteomic_aging_clock.webp",
             "title": "Proteomic Aging Clock",
             "description": "Contributed to the development and evaluation of neural network models for a proteomic ageing clock, comparing their performance against linear models and LightGBM approaches. The project used large-scale plasma proteomics data to predict biological ageing and assess its association with chronic disease risk, multimorbidity, functional decline and mortality across diverse population cohorts.",
@@ -18,7 +24,7 @@
             "code": "https://github.com/miargentieri/proteomic-age-ukb/tree/main/code/neural-networks"
         },
         {
-            "id": 2,
+            "id": 3,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/GWANN.webp",
             "title": "Genome Wide Association Neural Networks (GWANN)",
             "description": "Augmenting traditional genome wide association studies (GWAS) with advanced machine learning algorithms can allow the detection of novel signals in available cohorts by providing complementary approaches to the existing methods. We introduce “Genome wide association neural networks (GWANN)”, a novel approach that uses neural networks (NNs) to account for nonlinear and SNP-SNP interaction effects. We applied GWANN to family history of Alzheimer's disease (AD) in the UK Biobank. Our method identified 26 known AD genes, 2 target nominations and 67 novel genes, and validated the results against brain eQTLs, AD phenotype associations, biological pathways, disease associations and differentially expressed gene sets in the AD brain. Some drugs targeting novel GWANN hits are currently in clinical trials for AD. Applying NNs for GWAS, alongside existing methods, illustrates their potential to complement existing algorithms and methods, and enable the discovery of novel and tractable targets for AD.",
@@ -26,7 +32,7 @@
             "code": "https://github.com/titoghose/GWANN"
         },
         {
-            "id": 3,
+            "id": 4,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/PyTrack.webp",
             "title": "PyTrack",
             "description": "Eye tracking is a widely used tool for behavioral research in the field of psychology. With technological advancement, we now have specialized eye-tracking devices that offer high sampling rates, up to 2000 Hz, and allow for measuring eye movements with high accuracy. They also offer high spatial resolution, which enables the recording of very small movements, like drifts and microsaccades. Features and parameters of interest that characterize eye movements need to be algorithmically extracted from raw data as most eye trackers identify only basic parameters, such as blinks, fixations, and saccades. Eye-tracking experiments may investigate eye movement behavior in different groups of participants and in varying stimuli conditions. Hence, the analysis stage of such experiments typically involves two phases, (i) extraction of parameters of interest and (ii) statistical analysis between different participants or stimuli conditions using these parameters. Furthermore, the datasets collected in these experiments are usually very large in size, owing to the high temporal resolution of the eye trackers, and hence would benefit from an automated analysis toolkit. In this work, we present PyTrack, an end-to-end open-source solution for the analysis and visualization of eye-tracking data. It can be used to extract parameters of interest, generate and visualize a variety of gaze plots from raw eye-tracking data, and conduct statistical analysis between stimuli conditions and subject groups.",
@@ -34,7 +40,7 @@
             "code": "https://github.com/titoghose/pytrack"
         },
         {
-            "id": 4,
+            "id": 5,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/Q_Pi.webp",
             "title": "Q-Pi",
             "description": "Q-Pi is a simple tool using Python 3 that allows the 3D reconstruction, visualization and quantification of invasion at a cellular level. The first step of Q-Pi is the application of a series of filters to segment the cell regions from the background. Following the segmentation, it identifies the contours of the cell, i.e., a set of points in two-dimensional Euclidean space on the boundary of the cell. Finally, the convex hull algorithm is used to reconstruct the cell in 3D Euclidean space. Using the generated convex hull, information of the cell's volume and percentage invasion can be obtained using its relative location to the membrane.",
@@ -42,14 +48,14 @@
             "code": "https://github.com/titoghose/Q-Pi"
         },
         {
-            "id": 5,
+            "id": 6,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/TedX.webp",
             "title": "Artificial Intelligence: Investing in Yourself",
             "description": "In today's world, people make use of various forms of AI ranging from google searches to driverless cars. It is often misunderstood that AI is an extremely complex concept to understand. Hence, people try to distance themselves. This talk at TedXHRCollege in 2017 explores this complexity, discussing the foundation of AI algorithms and drawing similarities to the human brain's learning process. It includes a comparison of the brain's visual cortex with the architecture of convolutional neural networks (CNNs) using a toy example of object recognition. The human brain is arguably the most elegantly designed machine but unfortunately remains majorly unexplored. AI can be the tool which would aid exploring and decoding the mysteries of this complex system. The aim of this brief talk was to familiarise people with ways in which AI can help understand the brain and improve the quality and level of natural intelligence. Investing in AI is ultimately investing in yourself.",
             "link": "https://www.ted.com/talks/upamanyu_ghose_artificial_intelligence_investing_in_yourself"
         },
         {
-            "id": 6,
+            "id": 7,
             "image": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/Solis.webp",
             "title": "Solis",
             "description": "Solis is a smart light box integrated with its own mobile app that allows tracking of light therapy sessions and suggests activities to improve mood and mental health. A companion that helps you take control of your mood and mental health. The innovation in mental healthcare that gives light therapy its Peloton moment. Solis was ideated along with Dr. Minah Faiz, a brilliant doctor from Maldives who now runs the Mission for Migrant Workers Maldives. It was also awarded the best social enterprise at the Weidenfeld-Hoffmann Trust Enterprise Challenge in 2020.",
@@ -62,62 +68,62 @@
         "images": [
             {
                 "id": 1,
+                "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/oxford_rowing.webp",
+                "caption": "Winning blades at Summer VIIIs 2024 with GTBC",
+                "alt": ""
+            },
+            {
+                "id": 2,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/lhotel_de_ville.webp",
                 "caption": "Le Boulanger de L'hotel de Ville, Bourdeaux",
                 "alt": ""
             },
             {
-                "id": 2,
+                "id": 3,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/oxford_cycling.webp",
                 "caption": "Cycling on the Bernwood Forest Trail near Oxford",
                 "alt": ""
             },
             {
-                "id": 3,
+                "id": 4,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/val_de_nuria1.webp",
                 "caption": "The view en route to Val de Nuria",
                 "alt": ""
             },
             {
-                "id": 4,
+                "id": 5,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/scarisoara_romania.webp",
                 "caption": "Heading to the Scarisoara glacier cave in Romania",
                 "alt": ""
             },
             {
-                "id": 5,
+                "id": 6,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/tapas.webp",
                 "caption": "Prepping for tapas night",
                 "alt": ""
             },
             {
-                "id": 6,
+                "id": 7,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/val_de_nuria2.webp",
                 "caption": "On the way up to Val de Nuria, a valley in the Pyrenees",
                 "alt": ""
             },
             {
-                "id": 7,
+                "id": 8,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/fideua_de_marisco.webp",
                 "caption": "Cooking fideua de marisco in Barcelona",
                 "alt": ""
             },
             {
-                "id": 8,
+                "id": 9,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/shame_shame_shame.webp",
                 "caption": "\"Shame. Shame. Shame.\"",
                 "alt": ""
             },
             {
-                "id": 9,
+                "id": 10,
                 "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/camp_nou.webp",
                 "caption": "At Camp Nou",
-                "alt": ""
-            },
-            {
-                "id": 10,
-                "src": "https://raw.githubusercontent.com/titoghose/titoghose.github.io/main/data/oxford_rowing.webp",
-                "caption": "Winning blades at Summer VIIIs 2024 with GTBC",
                 "alt": ""
             }
         ]

@@ -31,7 +31,7 @@ const AboutMe: FC = () => {
             h="100%"
             flexDirection={{ base: 'column', md: 'row' }}
         >
-            <Flex justifyContent="center" flex="0.3">
+            <Flex justifyContent="center" alignItems="center" flex="0.3">
                 <Image
                     w={{ base: '250px', md: '400px' }}
                     h={{ base: '250px', md: '400px' }}
