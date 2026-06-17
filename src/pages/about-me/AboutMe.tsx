@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import { Box, Button, Flex, Heading, Image, Link, Text } from '@chakra-ui/react';
-import { FileText, Book, Mail } from 'lucide-react';
+import { FileText, Book, Mail, GraduationCap } from 'lucide-react';
 
 // Brand icons removed from lucide-react v1; using inline SVGs instead
 const GithubIcon = ({ width }: { width: string }) => (
@@ -74,6 +74,15 @@ const AboutMe: FC = () => {
                         size={{ base: 'lg', md: 'md' }}
                     >
                         G-Scholar
+                    </Button>
+                    <Button
+                        variant="outline"
+                        leftIcon={<GraduationCap width="8pt" />}
+                        onClick={() => window.open(data.oxford_profile)}
+                        borderWidth="2px"
+                        size={{ base: 'lg', md: 'md' }}
+                    >
+                        Oxford
                     </Button>
                     <Button
                         variant="outline"
