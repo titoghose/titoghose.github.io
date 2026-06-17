@@ -18,9 +18,7 @@ export const Life: FC = () => {
                     {data.life.description} {data.life.link}
                 </Text> */}
             </Box>
-            {/* @ts-expect-error react-responsive-masonry types not yet updated for React 19 */}
             <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 500: 2, 900: 3 }} style={{ width: '100%' }}>
-                {/* @ts-expect-error react-responsive-masonry types not yet updated for React 19 */}
                 <Masonry gutter="20px">
                     {data.life.images.map((life) => {
                         return (
