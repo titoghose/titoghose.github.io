@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import { Box, Button, Flex, Heading, Image, Link, Text } from '@chakra-ui/react';
-import { FileText, Book, Mail } from 'lucide-react';
+import { FileText, Book } from 'lucide-react';
 
 // Brand icons removed from lucide-react v1; using inline SVGs instead
 const GithubIcon = ({ width }: { width: string }) => (
@@ -41,11 +41,15 @@ const AboutMe: FC = () => {
                 />
             </Flex>
             <Box flex="0.7">
-                <Heading fontSize="4xl" textAlign={{ base: 'center', md: 'left' }}>
+                {/* ml offset cancels Libre Baskerville's ~3px left glyph bearing at 4xl, aligning visually with body text */}
+                <Heading fontSize="4xl" lineHeight="1" textAlign={{ base: 'center', md: 'left' }} ml={{ base: 0, md: '-3px' }}>
                     {data.name}
                 </Heading>
                 <Text fontWeight="600" textAlign={{ base: 'center', md: 'left' }} color="gray" pt="1">
                     {data.title}
+                </Text>
+                <Text fontSize="sm" fontWeight="600" textAlign={{ base: 'center', md: 'left' }} color="gray" pt="1">
+                    {data.email}
                 </Text>
                 <Flex mt="8" gap="4" flexDirection={{ base: 'column', md: 'row' }}>
                     <Button
@@ -74,15 +78,6 @@ const AboutMe: FC = () => {
                         size={{ base: 'lg', md: 'md' }}
                     >
                         G-Scholar
-                    </Button>
-                    <Button
-                        variant="outline"
-                        leftIcon={<Mail width="8pt" />}
-                        onClick={() => window.open(data.email)}
-                        borderWidth="2px"
-                        size={{ base: 'lg', md: 'md' }}
-                    >
-                        Mail
                     </Button>
                     <Button
                         leftIcon={<FileText width="8pt" />}
