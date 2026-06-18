@@ -89,15 +89,6 @@ const AboutMe: FC = () => {
                         Oxford
                     </Button>
                     <Button
-                        variant="outline"
-                        leftIcon={<Mail width="8pt" />}
-                        onClick={() => window.open(data.email)}
-                        borderWidth="2px"
-                        size={{ base: 'lg', md: 'md' }}
-                    >
-                        Mail
-                    </Button>
-                    <Button
                         leftIcon={<FileText width="8pt" />}
                         onClick={() => window.open(data.cv)}
                         borderWidth="2px"

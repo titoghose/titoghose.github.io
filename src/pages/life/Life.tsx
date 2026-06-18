@@ -1,12 +1,21 @@
 import { FC } from 'react';
 
 import { Box, Heading, Image, Text } from '@chakra-ui/react';
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import MasonryBase, {
+    ResponsiveMasonry as ResponsiveMasonryBase,
+    MasonryProps,
+    ResponsiveMasonryProps,
+} from 'react-responsive-masonry';
 
 import { useData } from 'common/data/Data';
 import { Footer } from 'common/footer/Footer';
 import { Lightbox, useLightbox } from 'common/lightbox/Lightbox';
 import { RouteName } from 'router/Router.types';
+
+// react-responsive-masonry types its components as returning ReactElement, which no longer
+// satisfies React 19's JSX element type. Cast to FC with the library's own prop types.
+const Masonry = MasonryBase as FC<MasonryProps>;
+const ResponsiveMasonry = ResponsiveMasonryBase as FC<ResponsiveMasonryProps>;
 
 export const Life: FC = () => {
     const { data } = useData();
