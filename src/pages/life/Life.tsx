@@ -5,10 +5,12 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 import { useData } from 'common/data/Data';
 import { Footer } from 'common/footer/Footer';
+import { Lightbox, useLightbox } from 'common/lightbox/Lightbox';
 import { RouteName } from 'router/Router.types';
 
 export const Life: FC = () => {
     const { data } = useData();
+    const { isOpen, onClose, openImage, image } = useLightbox();
 
     return (
         <Box my={{ base: 0, md: 4 }} w="100%" gap={{ base: 4, md: 8 }} h="100%" flexDirection="column" className="life">
@@ -18,14 +20,20 @@ export const Life: FC = () => {
                     {data.life.description} {data.life.link}
                 </Text> */}
             </Box>
-            {/* @ts-expect-error react-responsive-masonry types not yet updated for React 19 */}
             <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 500: 2, 900: 3 }} style={{ width: '100%' }}>
-                {/* @ts-expect-error react-responsive-masonry types not yet updated for React 19 */}
                 <Masonry gutter="20px">
                     {data.life.images.map((life) => {
                         return (
                             <Box key={life.id.toString()} pos="relative" className="gallery-box">
-                                <Image borderRadius="xl" src={life.src} display="block" w="100%" />
+                                <Image
+                                    borderRadius="xl"
+                                    src={life.src}
+                                    alt={life.alt}
+                                    display="block"
+                                    w="100%"
+                                    cursor="pointer"
+                                    onClick={() => openImage({ src: life.src, alt: life.alt, caption: life.caption })}
+                                />
                                 <Text pt="2" fontWeight="300" fontStyle="italic">
                                     {life.caption}
                                 </Text>
@@ -34,6 +42,8 @@ export const Life: FC = () => {
                     })}
                 </Masonry>
             </ResponsiveMasonry>
+
+            <Lightbox isOpen={isOpen} onClose={onClose} image={image} />
 
             <Footer
                 pt="16"

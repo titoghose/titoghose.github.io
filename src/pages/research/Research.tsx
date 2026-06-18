@@ -5,12 +5,18 @@ import { Box, Button, Divider, Flex, Image, Stack, Text } from '@chakra-ui/react
 import { useData } from 'common/data/Data';
 import { Project } from 'common/data/Data.api';
 import { Footer } from 'common/footer/Footer';
+import { Lightbox, useLightbox } from 'common/lightbox/Lightbox';
 import { RouteName } from 'router/Router.types';
+
+interface ProjectItemProps extends Project {
+    onImageClick: (image: string, title: string) => void;
+}
 
 export const Research: FC = () => {
     const { data } = useData();
+    const { isOpen, onClose, openImage, image } = useLightbox();
 
-    const ProjectItem: FC<Project> = ({ image, title, description, link, code }) => {
+    const ProjectItem: FC<ProjectItemProps> = ({ image, title, description, link, code, onImageClick }) => {
         return (
             <Flex gap="6" flexDir={{ base: 'column', md: 'row' }}>
                 <Image
@@ -20,6 +26,8 @@ export const Research: FC = () => {
                     w={{ base: '100%', md: '240px' }}
                     borderRadius="xl"
                     objectFit="contain"
+                    cursor="pointer"
+                    onClick={() => onImageClick(image, title)}
                 />
                 <Flex flexDir="column" justifyContent="center" py="2">
                     <Box>
@@ -52,11 +60,15 @@ export const Research: FC = () => {
             <Stack spacing="6">
                 {data.projects.map((project, index) => (
                     <Fragment key={project.id}>
-                        <ProjectItem {...project} />
+                        <ProjectItem
+                            {...project}
+                            onImageClick={(src, title) => openImage({ src, alt: `image-${title}` })}
+                        />
                         {index !== data.projects.length - 1 && <Divider borderColor="#ececec" borderWidth="2px" />}
                     </Fragment>
                 ))}
             </Stack>
+            <Lightbox isOpen={isOpen} onClose={onClose} image={image} />
             <Footer prevLink={RouteName.AboutMe} prevText="Back to About Me" pt="16" />
         </Box>
     );
