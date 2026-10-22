@@ -8,12 +8,11 @@
         "@emotion/react": "^11",
         "@emotion/styled": "^11",
         "framer-motion": "^11",
-        "gh-pages": "^6",
         "lucide-react": "^1",
         "react": "^19",
         "react-dom": "^19",
         "react-responsive-masonry": "^2.1.6",
-        "react-router-dom": "^7",
+        "react-router-dom": "^7.18.4",
         "sass": "^1"
     },
     "devDependencies": {
@@ -23,15 +22,13 @@
         "@types/react-responsive-masonry": "^2.1.0",
         "@vitejs/plugin-react": "^4",
         "typescript": "^5",
-        "vite": "^6",
+        "vite": "^6.4.5",
         "vite-tsconfig-paths": "^6.1.1"
     },
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
-        "preview": "vite preview",
-        "predeploy": "yarn build",
-        "deploy": "gh-pages -d build"
+        "preview": "vite preview"
     },
     "browserslist": {
         "production": [
